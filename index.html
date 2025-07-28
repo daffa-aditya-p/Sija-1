@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X SIJA-1 | SMK Negeri 26 Jakarta - Future of Technology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cyber-blue': '#00D4FF',
+                        'neon-orange': '#FF4500',
+                        'dark-cyber': '#0A0E27',
+                        'glass-white': 'rgba(255, 255, 255, 0.1)',
+                        'electric-purple': '#8A2BE2',
+                        'matrix-green': '#00FF41'
+                    },
+                    fontFamily: {
+                        'cyber': ['Orbitron', 'monospace'],
+                        'main': ['Poppins', 'sans-serif']
+                    },
+                    animation: {
+                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite alternate',
+                        'cyber-scroll': 'cyber-scroll 20s linear infinite',
+                        'hologram': 'hologram 3s ease-in-out infinite',
+                        'data-stream': 'data-stream 1.5s ease-in-out infinite'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background: #0A0E27;
+            overflow-x: hidden;
+        }
+        
+        .cyber-gradient {
+            background: linear-gradient(135deg, #00D4FF 0%, #FF4500 50%, #8A2BE2 100%);
+        }
+        
+        .glass-morphism {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 212, 255, 0.2);
+        }
+        
+        .neo-brutalism {
+            background: linear-gradient(145deg, rgba(0, 212, 255, 0.1), rgba(255, 69, 0, 0.1));
+            border: 3px solid;
+            border-image: linear-gradient(45deg, #00D4FF, #FF4500) 1;
+            box-shadow: 8px 8px 0px rgba(0, 212, 255, 0.3), 16px 16px 0px rgba(255, 69, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .neo-brutalism:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0px rgba(0, 212, 255, 0.4), 20px 20px 0px rgba(255, 69, 0, 0.3);
+        }
+        
+        .holographic-text {
+            background: linear-gradient(45deg, #00D4FF, #FF4500, #8A2BE2, #00FF41);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: hologram 3s ease-in-out infinite;
+        }
+        
+        @keyframes hologram {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 20px rgba(0, 212, 255, 0.5); }
+            100% { box-shadow: 0 0 40px rgba(255, 69, 0, 0.8), 0 0 60px rgba(0, 212, 255, 0.5); }
+        }
+        
+        @keyframes cyber-scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        @keyframes data-stream {
+            0%, 100% { opacity: 0.3; transform: translateY(0px); }
+            50% { opacity: 1; transform: translateY(-10px); }
+        }
+        
+        .particles-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        
+        .cyber-grid {
+            background-image: 
+                linear-gradient(cyan 1px, transparent 1px),
+                linear-gradient(90deg, cyan 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.1;
+        }
+        
+        .neural-network {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300D4FF' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+            animation: data-stream 3s ease-in-out infinite;
+        }
+        
+        .quantum-border {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .quantum-border::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent, rgba(0, 212, 255, 0.5), transparent);
+            animation: cyber-scroll 3s linear infinite;
+        }
+        
+        .matrix-rain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.1;
+        }
+        
+        .ai-chat-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        .chat-bubble {
+            background: rgba(0, 212, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 212, 255, 0.3);
+        }
+        
+        .typing-indicator {
+            display: flex;
+            gap: 4px;
+            padding: 10px;
+        }
+        
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #00D4FF;
+            animation: typing 1.5s infinite;
+        }
+        
+        .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+        
+        @keyframes typing {
+            0%, 60%, 100% { transform: scale(1); opacity: 0.5; }
+            30% { transform: scale(1.2); opacity: 1; }
+        }
+        
+        .pr-card {
+            background: linear-gradient(135deg, 
+                rgba(0, 212, 255, 0.1) 0%, 
+                rgba(255, 69, 0, 0.05) 50%, 
+                rgba(138, 43, 226, 0.1) 100%);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pr-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s;
+        }
+        
+        .pr-card:hover::before {
+            left: 100%;
+        }
+        
+        .quantum-loader {
+            border: 4px solid rgba(0, 212, 255, 0.3);
+            border-left: 4px solid #00D4FF;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .terminal-cursor {
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        .cyber-table {
+            background: rgba(10, 14, 39, 0.9);
+            border: 2px solid rgba(0, 212, 255, 0.3);
+            backdrop-filter: blur(20px);
+        }
+        
+        .cyber-table th {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(255, 69, 0, 0.2));
+            border-bottom: 2px solid rgba(0, 212, 255, 0.5);
+        }
+        
+        .cyber-table td {
+            border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .cyber-table tr:hover td {
+            background: rgba(0, 212, 255, 0.1);
+            transform: scale(1.02);
+        }
+        
+        .notification-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: linear-gradient(45deg, #FF4500, #FF6B35);
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+            animation: pulse-glow 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-dark-cyber text-white">
+    <!-- Matrix Rain Background -->
+    <canvas class="matrix-rain" id="matrix"></canvas>
+    
+    <!-- Neural Network Background -->
+    <div class="neural-network"></div>
+    
+    <!-- Quantum Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-morphism transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-3xl font-cyber font-bold holographic-text">
+                    X SIJA-1
+                    <span class="text-sm block text-cyan-400">Sistem Informasi Jaringan dan Aplikasi</span>
+                </div>
+                <div class="hidden lg:flex space-x-8">
+                    <a href="#home" class="hover:text-cyber-blue transition-all duration-300 relative group">
+                        <span class="relative z-10">Home</span>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-cyber-blue transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#galeri" class="hover:text-neon-orange transition-all duration-300 relative group">
+                        <span class="relative z-10">Galeri</span>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-neon-orange transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#struktur" class="hover:text-electric-purple transition-all duration-300 relative group">
+                        <span class="relative z-10">Struktur</span>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-electric-purple transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#jadwal" class="hover:text-matrix-green transition-all duration-300 relative group">
+                        <span class="relative z-10">Jadwal</span>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-matrix-green transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#pr" class="hover:text-cyber-blue transition-all duration-300 relative group">
+                        <span class="relative z-10">PR</span>
+                        <span class="notification-badge" id="prBadge">0</span>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-cyber-blue transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </div>
+                <div class="lg:hidden">
+                    <button class="text-cyber-blue hover:text-neon-orange transition-colors">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Quantum Hero Section -->
+    <section id="home" class="min-h-screen relative overflow-hidden">
+        <div class="particles-container" id="particles-js"></div>
+        <div class="cyber-grid absolute inset-0"></div>
+        
+        <div class="relative z-10 min-h-screen flex items-center justify-center">
+            <div class="text-center px-6" data-aos="fade-up" data-aos-duration="1000">
+                <div class="mb-8">
+                    <h1 class="text-6xl md:text-8xl font-cyber font-black mb-6 holographic-text">
+                        WELCOME TO
+                    </h1>
+                    <h2 class="text-4xl md:text-6xl font-bold mb-8 text-white">
+                        X SIJA-1
+                        <span class="terminal-cursor text-cyber-blue">|</span>
+                    </h2>
+                </div>
+                
+                <div class="glass-morphism rounded-2xl p-8 mb-8 max-w-4xl mx-auto">
+                    <p class="text-xl md:text-2xl mb-6 text-gray-300">
+                        <span class="text-cyber-blue font-semibold">SMK Negeri 26 Jakarta</span> • 
+                        <span class="text-neon-orange font-semibold">Sistem Informasi Jaringan & Aplikasi</span>
+                    </p>
+                    <p class="text-lg text-gray-400 leading-relaxed">
+                        Masa depan teknologi dimulai dari sini. Bergabunglah dengan generasi digital yang akan mengubah dunia melalui inovasi, kreativitas, dan teknologi canggih.
+                    </p>
+                </div>
+                
+                <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+                    <button class="neo-brutalism bg-cyber-blue text-dark-cyber px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all duration-300" onclick="exploreClass()">
+                        <i class="fas fa-rocket mr-2"></i>JELAJAHI KELAS
+                    </button>
+                    <button class="neo-brutalism bg-neon-orange text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all duration-300" onclick="openAIChat()">
+                        <i class="fas fa-robot mr-2"></i>CHAT NeuraAI
+                    </button>
+                </div>
+                
+                <!-- Live Status -->
+                <div class="mt-12 flex justify-center">
+                    <div class="glass-morphism rounded-full px-6 py-3 flex items-center space-x-3">
+                        <div class="w-3 h-3 bg-matrix-green rounded-full animate-pulse"></div>
+                        <span class="text-sm font-medium">SISTEM ONLINE • <span id="liveTime"></span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-cyber-blue animate-bounce">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- Quantum Galeri -->
+    <section id="galeri" class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-5xl font-cyber font-bold holographic-text mb-6">
+                    GALERI SIJA-1
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Momen-momen perjalanan SIJA-1
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="neo-brutalism rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative overflow-hidden">
+                        <img src="data/2.jpg" 
+                             alt="AI Learning" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-cyber via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-xl font-bold text-white mb-2">Foto bersama</h3>
+                            <p class="text-gray-300 text-sm">Foto bersama</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="neo-brutalism rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative overflow-hidden">
+                        <img src="data/foto_bersama.jpg" 
+                             alt="Network Security" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-cyber via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-xl font-bold text-white mb-2">Foto bersama Bu Paulina</h3>
+                            <p class="text-gray-300 text-sm">foto bersama di RBTRA(Ruang Belajar Ramah Anak)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- <div class="neo-brutalism rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=500&h=300&fit=crop&auto=format" 
+                             alt="Coding Session" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-cyber via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-xl font-bold text-white mb-2">Code Revolution</h3>
+                            <p class="text-gray-300 text-sm">Sesi programming intensif dan debugging</p>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- <div class="neo-brutalism rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&h=300&fit=crop&auto=format" 
+                             alt="IoT Project" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-cyber via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-xl font-bold text-white mb-2">IoT Innovation</h3>
+                            <p class="text-gray-300 text-sm">Proyek Internet of Things masa depan</p>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- <div class="neo-brutalism rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="500">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=500&h=300&fit=crop&auto=format" 
+                             alt="Tech Presentation" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-cyber via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-xl font-bold text-white mb-2">Tech Presentation</h3>
+                            <p class="text-gray-300 text-sm">Presentasi inovasi teknologi terbaru</p>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- <div class="neo-brutalism rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="600">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=500&h=300&fit=crop&auto=format" 
+                             alt="Team Collaboration" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-cyber via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-xl font-bold text-white mb-2">Team Synergy</h3>
+                            <p class="text-gray-300 text-sm">Kolaborasi tim dalam proyek teknologi</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Quantum Struktur Kelas -->
+    <section id="struktur" class="py-20 bg-gradient-to-br from-dark-cyber to-gray-900 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-5xl font-cyber font-bold holographic-text mb-6">
+                    STRUKTUR KELAS
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Struktur Kelas X SIJA-1
+                </p>
+            </div>
+            
+            <!-- Leadership Hierarchy -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="strukturContainer">
+                <!-- Wali Kelas -->
+                <div class="neo-brutalism rounded-2xl p-8 text-center group hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="quantum-border w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center">
+                        <i class="fas fa-user-astronaut text-3xl text-cyber-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-cyber-blue">WALI KELAS</h3>
+                    <p class="text-gray-300 font-medium">Bu Paulina, S.Pd</p>
+                    <div class="mt-4 flex justify-center space-x-2">
+                        <span class="px-3 py-1 bg-cyber-blue bg-opacity-20 text-cyber-blue text-xs rounded-full">teacher</span>
+                    </div>
+                </div>
+                
+                <!-- Ketua Kelas -->
+                <div class="neo-brutalism rounded-2xl p-8 text-center group hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="quantum-border w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center">
+                        <i class="fas fa-crown text-3xl text-neon-orange"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-neon-orange">KETUA KELAS</h3>
+                    <p class="text-gray-300 font-medium">Muhammad Aldi Agatha</p>
+                    <div class="mt-4 flex justify-center space-x-2">
+                        <span class="px-3 py-1 bg-neon-orange bg-opacity-20 text-neon-orange text-xs rounded-full">head of the class</span>
+                    </div>
+                </div>
+                
+                <!-- Wakil Ketua -->
+                <div class="neo-brutalism rounded-2xl p-8 text-center group hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="quantum-border w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center">
+                        <i class="fas fa-user-tie text-3xl text-electric-purple"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-electric-purple">WAKIL KETUA</h3>
+                    <p class="text-gray-300 font-medium">Daffa Aditya Pratama</p>
+                    <div class="mt-4 flex justify-center space-x-2">
+                        <span class="px-3 py-1 bg-electric-purple bg-opacity-20 text-electric-purple text-xs rounded-full">Vice chairman of the class</span>
+                    </div>
+                </div>
+                
+                <!-- Sekretaris -->
+                <div class="neo-brutalism rounded-2xl p-8 text-center group hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <div class="quantum-border w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center">
+                        <i class="fas fa-clipboard-list text-3xl text-matrix-green"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-matrix-green">SEKRETARIS</h3>
+                    <p class="text-gray-300 font-medium">agviona Cinta aulia</p>
+                    <div class="mt-4 flex justify-center space-x-2">
+                        <span class="px-3 py-1 bg-matrix-green bg-opacity-20 text-matrix-green text-xs rounded-full">Secretary</span>
+                    </div>
+                </div>
+                
+                <!-- Bendahara -->
+                <div class="neo-brutalism rounded-2xl p-8 text-center group hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="500">
+                    <div class="quantum-border w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center">
+                        <i class="fas fa-coins text-3xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-yellow-400">BENDAHARA</h3>
+                    <p class="text-gray-300 font-medium">Nazwa Kanaya Putri</p>
+                    <div class="mt-4 flex justify-center space-x-2">
+                        <span class="px-3 py-1 bg-yellow-400 bg-opacity-20 text-yellow-400 text-xs rounded-full">Treasurer</span>
+                    </div>
+                </div>
+            </div>
+            
+             <!-- PJ Mata Pelajaran Section 
+            <div class="mt-16">
+                <h3 class="text-3xl font-bold text-center mb-12 holographic-text">PENANGGUNG JAWAB MATA PELAJARAN</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="pjContainer">
+                     PJ items will be generated by JavaScript 
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Quantum Jadwal Section -->
+    <section id="jadwal" class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-5xl font-cyber font-bold holographic-text mb-6">
+                    SCHEDULE
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Jadwal pembelajaran dan Jadwal Piket
+                </p>
+            </div>
+            
+            <!-- Jadwal Tabs -->
+            <div class="flex justify-center mb-12">
+                <div class="glass-morphism rounded-2xl p-2 flex space-x-2">
+                    <button class="schedule-tab active px-6 py-3 rounded-xl font-semibold transition-all duration-300" data-tab="pelajaran">
+                        <i class="fas fa-book mr-2"></i>Pelajaran
+                    </button>
+                    <button class="schedule-tab px-6 py-3 rounded-xl font-semibold transition-all duration-300" data-tab="piket">
+                        <i class="fas fa-broom mr-2"></i>Piket
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Jadwal Pelajaran -->
+            <div id="pelajaranTab" class="schedule-content">
+                <div class="overflow-x-auto">
+                    <table class="w-full cyber-table rounded-2xl overflow-hidden" data-aos="fade-up">
+                        <thead>
+                            <tr>
+                                <th class="px-6 py-4 text-left font-cyber">JAM</th>
+                                <th class="px-6 py-4 text-center font-cyber">SENIN</th>
+                                <th class="px-6 py-4 text-center font-cyber">SELASA</th>
+                                <th class="px-6 py-4 text-center font-cyber">RABU</th>
+                                <th class="px-6 py-4 text-center font-cyber">KAMIS</th>
+                                <th class="px-6 py-4 text-center font-cyber">JUMAT</th>
+                            </tr>
+                        </thead>
+                        <tbody id="jadwalPelajaranBody">
+                            <!-- Will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Jadwal Piket -->
+            <div id="piketTab" class="schedule-content hidden">
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                    <div class="neo-brutalism rounded-2xl p-6 text-center group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="quantum-border w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center">
+                            <i class="fas fa-sun text-2xl text-yellow-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-yellow-400">SENIN</h3>
+                        <ul class="space-y-2 text-gray-300" id="piketSenin">
+                            <!-- Will be populated by JavaScript -->
+                        </ul>
+                    </div>
+                    
+                    <div class="neo-brutalism rounded-2xl p-6 text-center group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="quantum-border w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center">
+                            <i class="fas fa-cloud text-2xl text-cyber-blue"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-cyber-blue">SELASA</h3>
+                        <ul class="space-y-2 text-gray-300" id="piketSelasa">
+                            <!-- Will be populated by JavaScript -->
+                        </ul>
+                    </div>
+                    
+                    <div class="neo-brutalism rounded-2xl p-6 text-center group" data-aos="fade-up" data-aos-delay="300">
+                        <div class="quantum-border w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center">
+                            <i class="fas fa-bolt text-2xl text-neon-orange"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-neon-orange">RABU</h3>
+                        <ul class="space-y-2 text-gray-300" id="piketRabu">
+                            <!-- Will be populated by JavaScript -->
+                        </ul>
+                    </div>
+                    
+                    <div class="neo-brutalism rounded-2xl p-6 text-center group" data-aos="fade-up" data-aos-delay="400">
+                        <div class="quantum-border w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center">
+                            <i class="fas fa-star text-2xl text-electric-purple"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-electric-purple">KAMIS</h3>
+                        <ul class="space-y-2 text-gray-300" id="piketKamis">
+                            <!-- Will be populated by JavaScript -->
+                        </ul>
+                    </div>
+                    
+                    <div class="neo-brutalism rounded-2xl p-6 text-center group" data-aos="fade-up" data-aos-delay="500">
+                        <div class="quantum-border w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center">
+                            <i class="fas fa-moon text-2xl text-matrix-green"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-matrix-green">JUMAT</h3>
+                        <ul class="space-y-2 text-gray-300" id="piketJumat">
+                            <!-- Will be populated by JavaScript -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PR Section -->
+    <section id="pr" class="py-20 bg-gradient-to-br from-dark-cyber to-gray-900 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-5xl font-cyber font-bold holographic-text mb-6">
+                    QUANTUM ASSIGNMENTS
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Tugas dan pekerjaan rumah minggu ini
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-7 gap-6" id="prContainer">
+                <!-- PR cards will be generated by JavaScript -->
+            </div>
+            
+            <!-- No PR Message -->
+            <div id="noPrMessage" class="text-center py-16 hidden">
+                <div class="glass-morphism rounded-2xl p-12 max-w-md mx-auto">
+                    <i class="fas fa-check-circle text-6xl text-matrix-green mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4 text-matrix-green">All Clear!</h3>
+                    <p class="text-gray-400">Tidak ada PR untuk minggu ini. Enjoy your free time! 🎉</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chat Widget -->
+    <div class="ai-chat-widget">
+        <div id="chatButton" class="neo-brutalism bg-cyber-blue text-dark-cyber w-16 h-16 rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-all duration-300">
+            <i class="fas fa-robot text-2xl"></i>
+        </div>
+        
+        <div id="chatWidget" class="hidden fixed bottom-24 right-6 w-96 h-96 chat-bubble rounded-2xl overflow-hidden">
+            <div class="bg-gradient-to-r from-cyber-blue to-neon-orange p-4">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                            <i class="fas fa-robot text-cyber-blue"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white">NeuraAI</h3>
+                            <p class="text-xs text-gray-200">AI Assistant X SIJA-1</p>
+                        </div>
+                    </div>
+                    <button id="closeChatButton" class="text-white hover:text-gray-300">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="chatMessages" class="h-64 p-4 overflow-y-auto bg-dark-cyber bg-opacity-90">
+                <div class="chat-message ai-message mb-4">
+                    <div class="bg-cyber-blue bg-opacity-20 rounded-lg p-3">
+                        <p class="text-sm">👋 Halo! Saya NeuraAI, asisten virtual X SIJA-1. Saya bisa membantu Anda dengan informasi jadwal, PR, dan struktur kelas. Ada yang bisa saya bantu?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="p-4 bg-dark-cyber bg-opacity-95">
+                <div class="flex space-x-2">
+                    <input type="text" id="chatInput" class="flex-1 bg-gray-800 text-white rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-cyber-blue" placeholder="Tanya NeuraAI...">
+                    <button id="sendChatButton" class="bg-cyber-blue text-dark-cyber px-4 py-2 rounded-lg hover:bg-opacity-80 transition-colors">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quantum Footer -->
+    <footer class="bg-black py-16 relative overflow-hidden">
+        <div class="neural-network"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-3xl font-cyber font-bold holographic-text mb-6">
+                        X SIJA-1
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        SMK Negeri 26 Jakarta<br>
+                        Sistem Informasi Jaringan dan Aplikasi<br>
+                        <span class="text-cyber-blue">Future Technology Academy</span>
+                    </p>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="text-xl font-bold mb-6 text-cyber-blue">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-cyber-blue transition-colors">Home</a></li>
+                        <li><a href="#galeri" class="text-gray-400 hover:text-cyber-blue transition-colors">Galeri</a></li>
+                        <li><a href="#struktur" class="text-gray-400 hover:text-cyber-blue transition-colors">Struktur</a></li>
+                        <li><a href="#jadwal" class="text-gray-400 hover:text-cyber-blue transition-colors">Jadwal</a></li>
+                    </ul>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="text-xl font-bold mb-6 text-neon-orange">Social Network</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="neo-brutalism bg-cyber-blue bg-opacity-20 text-cyber-blue w-12 h-12 rounded-xl flex items-center justify-center hover:scale-110 transition-all duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="neo-brutalism bg-neon-orange bg-opacity-20 text-neon-orange w-12 h-12 rounded-xl flex items-center justify-center hover:scale-110 transition-all duration-300">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                        <a href="#" class="neo-brutalism bg-electric-purple bg-opacity-20 text-electric-purple w-12 h-12 rounded-xl flex items-center justify-center hover:scale-110 transition-all duration-300">
+                            <i class="fab fa-tiktok text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <h4 class="text-xl font-bold mb-6 text-matrix-green">Rate Our Website</h4>
+                    <div class="flex space-x-3 mb-4" id="footerRating">
+                        <span class="rating-emoji cursor-pointer hover:scale-125 transition-transform" data-rating="1">😢</span>
+                        <span class="rating-emoji cursor-pointer hover:scale-125 transition-transform" data-rating="2">😐</span>
+                        <span class="rating-emoji cursor-pointer hover:scale-125 transition-transform" data-rating="3">😊</span>
+                        <span class="rating-emoji cursor-pointer hover:scale-125 transition-transform" data-rating="4">😍</span>
+                        <span class="rating-emoji cursor-pointer hover:scale-125 transition-transform" data-rating="5">🤩</span>
+                    </div>
+                    <p class="text-sm text-gray-400">Your feedback matters!</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">
+                        © 2025 X SIJA-1 | Crafted with ❤️ by 
+                        <span class="text-cyber-blue font-bold">daffa-aditya-p</span>
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 bg-matrix-green rounded-full animate-pulse"></div>
+                            <span class="text-xs text-gray-400">System Online</span>
+                        </div>
+                        <span class="text-xs text-gray-500">v2.0.25</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script type="module">
+        // Firebase Configuration (Base64 Encoded)
+        const encodedConfig = 'ewogICJhcGlLZXkiOiAiQUl6YVN5QW9BUmRPRWxyOWhFdlZFVktIRFVpUFBIWmhyTlZaQk9FIiwKICAiYXV0aERvbWFpbiI6ICJ4LXNpamExLmZpcmViYXNlYXBwLmNvbSIsCiAgInByb2plY3RJZCI6ICJ4LXNpamExIiwKICAic3RvcmFnZUJ1Y2tldCI6ICJ4LXNpamExLmZpcmViYXNlc3RvcmFnZS5hcHAiLAogICJtZXNzYWdpbmdTZW5kZXJJZCI6ICI2MjA2ODQ1NjY4OTAiLAogICJhcHBJZCI6ICIxOjYyMDY4NDU2Njg5MDp3ZWI6ZDU5N2ZiZjM2YTIzMTc1NGI5NDUxMyIsCiAgIm1lYXN1cmVtZW50SWQiOiAiRy02U1I2NzE5QjlRIgp9';
+        
+        // Groq AI API Key (Base64 Encoded)
+        const encodedApiKey = 'Z3NrX3dJNzNHNURzQzN4TUIxa2Y2ZlJsV0dkeWIzRllQMWpkeXBHZ0NFRXBrVEtJb2RMWnRydA==';
+        
+        // Decode configurations
+        const firebaseConfig = JSON.parse(atob(encodedConfig));
+        const groqApiKey = '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'; // Real API key
+        
+        // Import Firebase modules
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+        import { getFirestore, collection, onSnapshot, query, orderBy } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-analytics.js";
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const analytics = getAnalytics(app);
+        
+        // Global variables
+        let currentPRData = [];
+        let jadwalPelajaranData = [];
+        let jadwalPiketData = [];
+        let strukturData = [];
+        
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeParticles();
+            initializeMatrixRain();
+            initializeAOS();
+            initializeLiveTime();
+            loadFirebaseData();
+            initializeEventListeners();
+            initializeChatBot();
+        });
+        
+        // Initialize Particles.js
+        function initializeParticles() {
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {"value": 80, "density": {"enable": true, "value_area": 800}},
+                    "color": {"value": "#00D4FF"},
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {"width": 0, "color": "#000000"},
+                        "polygon": {"nb_sides": 5}
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {"enable": false, "speed": 1, "opacity_min": 0.1, "sync": false}
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {"enable": false, "speed": 40, "size_min": 0.1, "sync": false}
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#00D4FF",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 6,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {"enable": true, "mode": "repulse"},
+                        "onclick": {"enable": true, "mode": "push"},
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {"distance": 400, "line_linked": {"opacity": 1}},
+                        "bubble": {"distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3},
+                        "repulse": {"distance": 200, "duration": 0.4},
+                        "push": {"particles_nb": 4},
+                        "remove": {"particles_nb": 2}
+                    }
+                },
+                "retina_detect": true
+            });
+        }
+        
+        // Initialize Matrix Rain
+        function initializeMatrixRain() {
+            const canvas = document.getElementById('matrix');
+            const ctx = canvas.getContext('2d');
+            
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            
+            const matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+            const matrixArray = matrix.split("");
+            
+            const fontSize = 10;
+            const columns = canvas.width / fontSize;
+            
+            const drops = [];
+            for(let x = 0; x < columns; x++) {
+                drops[x] = 1;
+            }
+            
+            function draw() {
+                ctx.fillStyle = 'rgba(10, 14, 39, 0.04)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                
+                ctx.fillStyle = '#00D4FF';
+                ctx.font = fontSize + 'px monospace';
+                
+                for(let i = 0; i < drops.length; i++) {
+                    const text = matrixArray[Math.floor(Math.random() * matrixArray.length)];
+                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                    
+                    if(drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                        drops[i] = 0;
+                    }
+                    drops[i]++;
+                }
+            }
+            
+            setInterval(draw, 35);
+            
+            window.addEventListener('resize', () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            });
+        }
+        
+        // Initialize AOS
+        function initializeAOS() {
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 100
+            });
+        }
+        
+        // Initialize Live Time
+        function initializeLiveTime() {
+            function updateTime() {
+                const now = new Date();
+                const options = {
+                    timeZone: 'Asia/Jakarta',
+                    hour12: false,
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit'
+                };
+                document.getElementById('liveTime').textContent = now.toLocaleTimeString('id-ID', options);
+            }
+            updateTime();
+            setInterval(updateTime, 1000);
+        }
+        
+        // Load data from Firebase
+        function loadFirebaseData() {
+            // Load PR data
+            const prQuery = query(collection(db, 'pr'), orderBy('deadline', 'asc'));
+            onSnapshot(prQuery, (snapshot) => {
+                currentPRData = [];
+                snapshot.forEach((doc) => {
+                    currentPRData.push({ id: doc.id, ...doc.data() });
+                });
+                renderPRCards();
+                updatePRBadge();
+            });
+            
+            // Load jadwal pelajaran
+            const jadwalQuery = query(collection(db, 'jadwal_pelajaran'));
+            onSnapshot(jadwalQuery, (snapshot) => {
+                jadwalPelajaranData = [];
+                snapshot.forEach((doc) => {
+                    jadwalPelajaranData.push({ id: doc.id, ...doc.data() });
+                });
+                renderJadwalPelajaran();
+            });
+            
+            // Load jadwal piket
+            const piketQuery = query(collection(db, 'jadwal_piket'));
+            onSnapshot(piketQuery, (snapshot) => {
+                jadwalPiketData = [];
+                snapshot.forEach((doc) => {
+                    jadwalPiketData.push({ id: doc.id, ...doc.data() });
+                });
+                renderJadwalPiket();
+            });
+            
+            // Load struktur kelas
+            const strukturQuery = query(collection(db, 'struktur_kelas'));
+            onSnapshot(strukturQuery, (snapshot) => {
+                strukturData = [];
+                snapshot.forEach((doc) => {
+                    strukturData.push({ id: doc.id, ...doc.data() });
+                });
+                renderPJList();
+            });
+        }
+        
+        // Render PR Cards
+        function renderPRCards() {
+            const container = document.getElementById('prContainer');
+            const noMessage = document.getElementById('noPrMessage');
+            
+            if (currentPRData.length === 0) {
+                container.classList.add('hidden');
+                noMessage.classList.remove('hidden');
+                return;
+            }
+            
+            container.classList.remove('hidden');
+            noMessage.classList.add('hidden');
+            
+            const days = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'];
+            const today = new Date();
+            const weekStart = new Date(today.setDate(today.getDate() - today.getDay() + 1));
+            
+            container.innerHTML = '';
+            
+            days.forEach((day, index) => {
+                const dayDate = new Date(weekStart);
+                dayDate.setDate(weekStart.getDate() + index);
+                
+                const dayPR = currentPRData.filter(pr => {
+                    const prDate = new Date(pr.deadline.seconds * 1000);
+                    return prDate.toDateString() === dayDate.toDateString();
+                });
+                
+                const dayCard = document.createElement('div');
+                dayCard.className = 'neo-brutalism rounded-2xl p-6 hover:scale-105 transition-all duration-300';
+                dayCard.setAttribute('data-aos', 'fade-up');
+                dayCard.setAttribute('data-aos-delay', (index * 100).toString());
+                
+                const isToday = dayDate.toDateString() === new Date().toDateString();
+                const dayColor = isToday ? 'text-cyber-blue' : 'text-gray-300';
+                
+                dayCard.innerHTML = `
+                    <div class="text-center mb-4">
+                        <h3 class="text-xl font-bold ${dayColor} mb-2">${day.toUpperCase()}</h3>
+                        <p class="text-sm text-gray-400">${dayDate.toLocaleDateString('id-ID', { day: 'numeric', month: 'short' })}</p>
+                        ${isToday ? '<div class="w-2 h-2 bg-cyber-blue rounded-full mx-auto mt-2 animate-pulse"></div>' : ''}
+                    </div>
+                    <div class="space-y-3">
+                          ${dayPR.length > 0 ? dayPR.map(pr => `
+                            <div class="pr-card rounded-lg p-3 group cursor-pointer">
+                                <div class="flex items-start justify-between mb-2">
+                                    <h4 class="font-semibold text-sm text-white group-hover:text-cyber-blue transition-colors">${pr.subject}</h4>
+                                    <span class="text-xs px-2 py-1 rounded-full ${getPriorityColor(pr.priority)}">${pr.priority}</span>
+                                </div>
+                                <p class="text-xs text-gray-400 mb-2">${pr.description}</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-500">
+                                        <i class="far fa-clock mr-1"></i>
+                                        ${new Date(pr.deadline.seconds * 1000).toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' })}
+                                    </span>
+                                    <span class="text-xs text-${getStatusColor(pr.status)}">${pr.status}</span>
+                                </div>
+                            </div>
+                        `).join('') : `
+                            <div class="text-center py-8">
+                                <i class="fas fa-check-circle text-3xl text-matrix-green mb-2"></i>
+                                <p class="text-sm text-gray-400">No assignments</p>
+                            </div>
+                        `}
+                    </div>
+                `;
+                
+                container.appendChild(dayCard);
+            });
+        }
+        
+        // Helper functions for PR
+        function getPriorityColor(priority) {
+            switch(priority) {
+                case 'High': return 'bg-red-500 text-white';
+                case 'Medium': return 'bg-yellow-500 text-black';
+                case 'Low': return 'bg-green-500 text-white';
+                default: return 'bg-gray-500 text-white';
+            }
+        }
+        
+        function getStatusColor(status) {
+            switch(status) {
+                case 'Completed': return 'matrix-green';
+                case 'In Progress': return 'neon-orange';
+                case 'Not Started': return 'gray-400';
+                default: return 'gray-400';
+            }
+        }
+        
+        // Update PR Badge
+        function updatePRBadge() {
+            const badge = document.getElementById('prBadge');
+            const pendingPR = currentPRData.filter(pr => pr.status !== 'Completed').length;
+            badge.textContent = pendingPR;
+            badge.style.display = pendingPR > 0 ? 'flex' : 'none';
+        }
+        
+        // Render Jadwal Pelajaran
+        function renderJadwalPelajaran() {
+            const tbody = document.getElementById('jadwalPelajaranBody');
+            if (!jadwalPelajaranData.length) {
+                tbody.innerHTML = `
+                    <tr><td colspan="6" class="text-center py-8 text-gray-400">
+                        <div class="quantum-loader mx-auto mb-4"></div>
+                        Loading schedule data...
+                    </td></tr>
+                `;
+                return;
+            }
+            
+            const timeSlots = [
+                '07:00-08:00', '08:00-09:00', '09:00-10:00', 
+                '10:00-10:30', '10:30-11:30', '11:30-12:30',
+                '12:30-13:30', '13:30-14:30', '14:30-15:30'
+            ];
+            
+            tbody.innerHTML = '';
+            
+            timeSlots.forEach((time, index) => {
+                const isBreak = time === '10:00-10:30' || time === '12:30-13:30';
+                const row = document.createElement('tr');
+                row.className = isBreak ? 'bg-yellow-600 bg-opacity-10' : 'border-b border-gray-600';
+                
+                if (isBreak) {
+                    row.innerHTML = `
+                        <td class="px-6 py-4 font-bold text-yellow-400">${time}</td>
+                        <td colspan="5" class="px-6 py-4 text-center font-bold text-yellow-400">
+                            <i class="fas fa-coffee mr-2"></i>
+                            ${time === '10:00-10:30' ? 'BREAK TIME' : 'LUNCH BREAK'}
+                        </td>
+                    `;
+                } else {
+                    const schedule = jadwalPelajaranData.find(s => s.time === time) || {};
+                    row.innerHTML = `
+                        <td class="px-6 py-4 font-bold text-cyber-blue">${time}</td>
+                        <td class="px-6 py-4 text-center">${schedule.senin || '[Mata Pelajaran]'}</td>
+                        <td class="px-6 py-4 text-center">${schedule.selasa || '[Mata Pelajaran]'}</td>
+                        <td class="px-6 py-4 text-center">${schedule.rabu || '[Mata Pelajaran]'}</td>
+                        <td class="px-6 py-4 text-center">${schedule.kamis || '[Mata Pelajaran]'}</td>
+                        <td class="px-6 py-4 text-center">${schedule.jumat || '[Mata Pelajaran]'}</td>
+                    `;
+                }
+                
+                tbody.appendChild(row);
+            });
+        }
+        
+        // Render Jadwal Piket
+        function renderJadwalPiket() {
+            const days = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat'];
+            
+            days.forEach(day => {
+                const container = document.getElementById(`piket${day}`);
+                const daySchedule = jadwalPiketData.find(p => p.day === day.toLowerCase());
+                
+                if (daySchedule && daySchedule.students) {
+                    container.innerHTML = daySchedule.students.map(student => 
+                        `<li class="hover:text-cyber-blue transition-colors cursor-pointer">${student}</li>`
+                    ).join('');
+                } else {
+                    container.innerHTML = `
+                        <li class="text-gray-500">[Nama 1]</li>
+                        <li class="text-gray-500">[Nama 2]</li>
+                        <li class="text-gray-500">[Nama 3]</li>
+                    `;
+                }
+            });
+        }
+        
+        // Render PJ List
+        function renderPJList() {
+            const container = document.getElementById('pjContainer');
+            
+            const subjects = [
+                { name: 'Matematika', icon: 'fas fa-calculator', color: 'cyber-blue' },
+                { name: 'Pemrograman', icon: 'fas fa-code', color: 'neon-orange' },
+                { name: 'Jaringan', icon: 'fas fa-network-wired', color: 'electric-purple' },
+                { name: 'B. Indonesia', icon: 'fas fa-book', color: 'matrix-green' },
+                { name: 'B. Inggris', icon: 'fas fa-globe', color: 'yellow-400' },
+                { name: 'Fisika', icon: 'fas fa-atom', color: 'cyan-400' },
+                { name: 'Kimia', icon: 'fas fa-flask', color: 'pink-400' },
+                { name: 'Database', icon: 'fas fa-database', color: 'indigo-400' },
+                { name: 'Web Design', icon: 'fas fa-paint-brush', color: 'red-400' },
+                { name: 'Mobile Dev', icon: 'fas fa-mobile-alt', color: 'green-400' }
+            ];
+            
+            container.innerHTML = '';
+            
+            subjects.forEach((subject, index) => {
+                const pjData = strukturData.find(s => s.subject === subject.name);
+                const pjName = pjData ? pjData.name : '[Nama PJ]';
+                
+                const card = document.createElement('div');
+                card.className = 'neo-brutalism rounded-xl p-4 text-center group hover:scale-105 transition-all duration-300';
+                card.setAttribute('data-aos', 'fade-up');
+                card.setAttribute('data-aos-delay', (index * 50).toString());
+                
+                card.innerHTML = `
+                    <div class="quantum-border w-12 h-12 mx-auto mb-3 rounded-full flex items-center justify-center">
+                        <i class="${subject.icon} text-xl text-${subject.color}"></i>
+                    </div>
+                    <h3 class="font-bold mb-1 text-${subject.color} text-sm">${subject.name}</h3>
+                    <p class="text-gray-300 text-xs">${pjName}</p>
+                    <div class="mt-2">
+                        <span class="px-2 py-1 bg-${subject.color} bg-opacity-20 text-${subject.color} text-xs rounded-full">PJ</span>
+                    </div>
+                `;
+                
+                container.appendChild(card);
+            });
+        }
+        
+        // Initialize Event Listeners
+        function initializeEventListeners() {
+            // Schedule tabs
+            document.querySelectorAll('.schedule-tab').forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const tabName = this.dataset.tab;
+                    
+                    // Update active tab
+                    document.querySelectorAll('.schedule-tab').forEach(t => {
+                        t.classList.remove('active', 'bg-cyber-blue', 'text-dark-cyber');
+                        t.classList.add('text-gray-300');
+                    });
+                    this.classList.add('active', 'bg-cyber-blue', 'text-dark-cyber');
+                    this.classList.remove('text-gray-300');
+                    
+                    // Show/hide content
+                    document.querySelectorAll('.schedule-content').forEach(content => {
+                        content.classList.add('hidden');
+                    });
+                    document.getElementById(tabName + 'Tab').classList.remove('hidden');
+                });
+            });
+            
+            // Rating system
+            document.querySelectorAll('.rating-emoji').forEach(emoji => {
+                emoji.addEventListener('click', function() {
+                    handleRating(this.dataset.rating);
+                });
+            });
+            
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Navbar scroll effect
+            window.addEventListener('scroll', function() {
+                const navbar = document.getElementById('navbar');
+                if (window.scrollY > 100) {
+                    navbar.style.background = 'rgba(10, 14, 39, 0.95)';
+                    navbar.style.borderBottom = '1px solid rgba(0, 212, 255, 0.3)';
+                } else {
+                    navbar.style.background = 'rgba(255, 255, 255, 0.05)';
+                    navbar.style.borderBottom = 'none';
+                }
+            });
+        }
+        
+        // Initialize Chat Bot
+        function initializeChatBot() {
+            const chatButton = document.getElementById('chatButton');
+            const chatWidget = document.getElementById('chatWidget');
+            const closeChatButton = document.getElementById('closeChatButton');
+            const chatInput = document.getElementById('chatInput');
+            const sendChatButton = document.getElementById('sendChatButton');
+            const chatMessages = document.getElementById('chatMessages');
+            
+            chatButton.addEventListener('click', () => {
+                chatWidget.classList.toggle('hidden');
+                if (!chatWidget.classList.contains('hidden')) {
+                    chatInput.focus();
+                }
+            });
+            
+            closeChatButton.addEventListener('click', () => {
+                chatWidget.classList.add('hidden');
+            });
+            
+            sendChatButton.addEventListener('click', sendMessage);
+            chatInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+            
+            async function sendMessage() {
+                const message = chatInput.value.trim();
+                if (!message) return;
+                
+                // Add user message
+                addChatMessage(message, 'user');
+                chatInput.value = '';
+                
+                // Show typing indicator
+                showTypingIndicator();
+                
+                try {
+                    const response = await queryGroqAI(message);
+                    hideTypingIndicator();
+                    addChatMessage(response, 'ai');
+                } catch (error) {
+                    hideTypingIndicator();
+                    addChatMessage('Maaf, terjadi kesalahan. Silakan coba lagi nanti.', 'ai');
+                }
+            }
+            
+            function addChatMessage(message, sender) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `chat-message ${sender}-message mb-4`;
+                
+                const isUser = sender === 'user';
+                const bgColor = isUser ? 'bg-neon-orange bg-opacity-20' : 'bg-cyber-blue bg-opacity-20';
+                const textAlign = isUser ? 'text-right' : 'text-left';
+                
+                messageDiv.innerHTML = `
+                    <div class="${bgColor} rounded-lg p-3 ${textAlign} max-w-xs ${isUser ? 'ml-auto' : 'mr-auto'}">
+                        <p class="text-sm">${message}</p>
+                        <span class="text-xs text-gray-400">${new Date().toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' })}</span>
+                    </div>
+                `;
+                
+                chatMessages.appendChild(messageDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+            
+            function showTypingIndicator() {
+                const typingDiv = document.createElement('div');
+                typingDiv.id = 'typingIndicator';
+                typingDiv.className = 'typing-indicator mb-4';
+                typingDiv.innerHTML = `
+                    <div class="bg-cyber-blue bg-opacity-20 rounded-lg p-3 max-w-xs">
+                        <div class="flex space-x-1">
+                            <div class="typing-dot"></div>
+                            <div class="typing-dot"></div>
+                            <div class="typing-dot"></div>
+                        </div>
+                    </div>
+                `;
+                chatMessages.appendChild(typingDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+            
+            function hideTypingIndicator() {
+                const typingIndicator = document.getElementById('typingIndicator');
+                if (typingIndicator) {
+                    typingIndicator.remove();
+                }
+            }
+            async function queryGroqAI(userMessage) {
+    // Create context from current data
+    const context = createAIContext();
+    
+    try {
+        const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${groqApiKey}`,
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                messages: [
+                    {
+                        "role": "system",
+                        "content": `Halo! Nama saya NeuraAI, asisten virtual untuk kelas X SIJA-1 SMK Negeri 26 Jakarta. 
+
+Saya dirancang khusus untuk membantu siswa dengan informasi tentang:
+1. Jadwal Pelajaran hari ini dan minggu ini
+2. Jadwal Piket untuk semua hari
+3. Struktur Kelas dan pengurus
+4. Tugas/PR yang ada dan deadline
+5. Informasi umum tentang kelas dan mata pelajaran SIJA
+
+Data saat ini dari sistem:
+${context}
+
+Jawab dengan gaya yang ramah, informatif, dan helpful. Gunakan emoji yang sesuai. Jika ditanya tentang data yang tidak ada, katakan bahwa data tersebut belum tersedia di sistem.`
+                    },
+                    {
+                        "role": "user", 
+                        "content": userMessage
+                    }
+                ],
+                model: "meta-llama/llama-4-scout-17b-16e-instruct",
+                temperature: 0.7,
+                max_tokens: 1000,
+                top_p: 1,
+                stream: false
+            })
+        });
+        
+        if (!response.ok) {
+            const errorData = await response.text();
+            console.error('Groq API Error:', response.status, errorData);
+            throw new Error(`API Error: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        
+        if (data.choices && data.choices[0] && data.choices[0].message) {
+            return data.choices[0].message.content;
+        } else {
+            throw new Error('Invalid response format');
+        }
+        
+    } catch (error) {
+        console.error('Groq API Error Details:', error);
+        
+        // Fallback responses
+        const fallbackResponses = [
+            "🤖 Halo! Saya NeuraAI untuk X SIJA-1. Saat ini sedang ada gangguan koneksi, tapi saya tetap bisa membantu dengan informasi dasar tentang kelas kita!",
+            "📚 Maaf ada kendala teknis. Tapi saya tahu kelas X SIJA-1 punya jadwal pelajaran lengkap dan struktur organisasi yang solid!",
+            "⚡ Sistem sedang maintenance, tapi data kelas X SIJA-1 tetap aman tersimpan. Coba tanya lagi sebentar ya!",
+            "🔧 Hmm, sepertinya ada gangguan server. Sementara ini, kamu bisa cek jadwal dan tugas di dashboard utama!"
+        ];
+        
+        return fallbackResponses[Math.floor(Math.random() * fallbackResponses.length)];
+    }
+}
+            
+            function createAIContext() {
+    let context = "=== DATA KELAS X SIJA-1 SMK NEGERI 26 JAKARTA ===\n\n";
+    
+    // Get today's day
+    const today = new Date().toLocaleDateString('id-ID', { weekday: 'long' }).toLowerCase();
+    
+    // PR Data
+    if (currentPRData && currentPRData.length > 0) {
+        context += "🔥 TUGAS/PR AKTIF:\n";
+        currentPRData.forEach(pr => {
+            const deadline = new Date(pr.deadline.seconds * 1000);
+            const deadlineStr = deadline.toLocaleDateString('id-ID', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+            context += `• ${pr.subject}: ${pr.description.substring(0, 100)}... \n  📅 Deadline: ${deadlineStr} | Status: ${pr.status} | Prioritas: ${pr.priority}\n\n`;
+        });
+    } else {
+        context += "📝 TUGAS/PR: Tidak ada tugas aktif saat ini\n\n";
+    }
+    
+    // Today's Schedule
+    if (jadwalPelajaranData && jadwalPelajaranData.length > 0) {
+        context += `📚 JADWAL HARI INI (${today.toUpperCase()}):\n`;
+        jadwalPelajaranData.forEach(schedule => {
+            const todaySubject = schedule[today];
+            if (todaySubject && todaySubject !== '-') {
+                context += `• ${schedule.time}: ${todaySubject}\n`;
+            }
+        });
+        context += "\n";
+    }
+    
+    // Piket Today
+    if (jadwalPiketData && jadwalPiketData.length > 0) {
+        const todayPiket = jadwalPiketData.find(p => p.day === today);
+        if (todayPiket && todayPiket.students) {
+            context += `🧹 PIKET HARI INI:\n`;
+            context += `Yang bertugas: ${todayPiket.students.join(', ')}\n\n`;
+        }
+    }
+    
+    // Class Structure
+    if (strukturData && strukturData.length > 0) {
+        context += "👥 STRUKTUR KELAS:\n";
+        strukturData.forEach(member => {
+            context += `• ${member.position}: ${member.name}`;
+            if (member.subject) context += ` (${member.subject})`;
+            context += "\n";
+        });
+        context += "\n";
+    }
+    
+    context += `⏰ Waktu sekarang: ${new Date().toLocaleString('id-ID')}\n`;
+    context += "🎓 Kelas: X SIJA-1 (Sistem Informasi Jaringan dan Aplikasi)\n";
+    context += "🏫 Sekolah: SMK Negeri 26 Jakarta\n";
+    
+    return context;
+}
+            
+        }
+        
+        // Handle Rating
+        function handleRating(rating) {
+            const ratingText = ['Sangat Buruk', 'Buruk', 'Biasa', 'Bagus', 'Sangat Bagus'][rating - 1];
+            
+            // Send to Telegram bot
+            const botToken = '7057814387:AAHXlYHym3NVg8rXNtw1o70P4emyw1R5J60';
+            const chatId = '6620478842';
+            const message = `🌟 Rating Website X SIJA-1
+            
+Rating: ${rating}/5 ⭐ (${ratingText})
+Timestamp: ${new Date().toLocaleString('id-ID')}
+User: ${document.domain}
+Version: v2.0.25
+
+Terima kasih atas feedback Anda! 🚀`;
+            
+            fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    chat_id: chatId,
+                    text: message,
+                    parse_mode: 'HTML'
+                })
+            }).then(() => {
+                showNotification(`Terima kasih! Rating Anda: ${ratingText} ⭐`, 'success');
+            }).catch(() => {
+                showNotification('Rating berhasil diberikan! 🎉', 'success');
+            });
+            
+            // Visual feedback
+            document.querySelectorAll('.rating-emoji').forEach(e => {
+                e.style.opacity = '0.3';
+                e.style.transform = 'scale(1)';
+            });
+            
+            const clickedEmoji = document.querySelector(`[data-rating="${rating}"]`);
+            clickedEmoji.style.opacity = '1';
+            clickedEmoji.style.transform = 'scale(1.3)';
+            
+            // Reset after 3 seconds
+            setTimeout(() => {
+                document.querySelectorAll('.rating-emoji').forEach(e => {
+                    e.style.opacity = '1';
+                    e.style.transform = 'scale(1)';
+                });
+            }, 3000);
+        }
+        
+        // Utility Functions
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `fixed top-24 right-6 z-50 glass-morphism rounded-xl p-4 transform translate-x-full transition-transform duration-300`;
+            
+            const icon = type === 'success' ? 'fas fa-check-circle text-matrix-green' : 'fas fa-info-circle text-cyber-blue';
+            
+            notification.innerHTML = `
+                <div class="flex items-center space-x-3">
+                    <i class="${icon}"></i>
+                    <span class="text-white">${message}</span>
+                </div>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Animate in
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+            
+            // Auto remove
+            setTimeout(() => {
+                notification.style.transform = 'translateX(full)';
+                setTimeout(() => notification.remove(), 300);
+            }, 3000);
+        }
+        
+        function exploreClass() {
+            document.getElementById('galeri').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+        
+        function openAIChat() {
+            document.getElementById('chatWidget').classList.remove('hidden');
+            document.getElementById('chatInput').focus();
+        }
+        
+        // Export global functions
+        window.exploreClass = exploreClass;
+        window.openAIChat = openAIChat;
+    </script>
+</body>
+</html>
